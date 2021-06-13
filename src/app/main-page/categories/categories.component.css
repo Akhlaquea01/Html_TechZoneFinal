@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700");
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+
+* {
+  box-sizing: border-box !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #666666;
+  font-size: 14px;
+  font-family: "poppins", sans-serif;
+  line-height: 1.80857;
+  font-weight: normal;
+  overflow-x: hidden;
+}
+
+/** whyschose section **/
+
+.whyschose {
+  background: #fff;
+  padding-top: 85px;
+}
+
+.title {
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+.title h2 {
+  font-size: 50px;
+  line-height: 55px;
+  color: #f9be20;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 27px;
+  position: relative;
+  padding-bottom: 8px;
+}
+.title h2:after {
+  position: relative;
+  content: "";
+  top: 100%;
+  width: 110px;
+  height: 10px;
+  display: block;
+  margin: 0 auto;
+  background: #000;
+}
+
+.title span {
+  color: #070500;
+  font-size: 28px;
+  line-height: 28px;
+  margin-top: 20px;
+  font-family: Caveat;
+}
+.black {
+  font-weight: 500;
+  color: #070500;
+}
+
+.choose_bg {
+  background: #f9be20;
+}
+
+.choose_bg .white_bg {
+  background: #fff;
+  padding: 40px 20px;
+  box-shadow: #ddd 0px 0px 10px 3px;
+  margin-bottom: 5px;
+}
+.choose_bg .white_bg .for_box {
+  text-align: center;
+  padding: 1px;
+}
+.choose_bg .white_bg .for_box i {
+  display: block;
+}
+.choose_bg .white_bg .for_box h3 {
+  font-size: 26px;
+  line-height: 21px;
+  color: #070500;
+  padding: 25px 0px 15px 0px;
+  display: inline-block;
+}
+
+.choose_bg .white_bg .for_box p {
+  color: #0d0c0a;
+  font-size: 17px;
+  line-height: 28px;
+}
+
+.read-more {
+  width: 190px;
+  margin: 0 auto;
+  background: #fff;
+  display: block;
+  border: #f9be20 solid 2px;
+  text-align: center;
+  padding: 10px 0px;
+  color: #0a0401 !important;
+  font-size: 20px;
+  margin-top: 40px;
+}
+.read-more:hover {
+  background: #f9be20;
+  color: #0a0401;
+}
+
+/** service section **/
+.service {
+  background: #fff;
+  padding-top: 90px;
+}
+.service .service-box {
+  padding: 30px 20px;
+  box-shadow: #00000040 0px 0px 19px 0px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.service .service-box i img {
+  height: 88px;
+}
+
+.service .service-box button {
+  font-weight: 900;
+  font-size: 22px;
+  line-height: 22px;
+  color: #050000;
+  padding: 10px;
+  font-family: "Indie flower";
+  /* text-decoration: underline; */
+  box-shadow: 0 5px 15px #FBC02d;
+  margin-left: 27%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  display: block;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+}
+
+.service .service-box p {
+  color: black;
+  font-size: 25px;
+  line-height: 28px;
+  font-family: Caveat;
+}
+
+i {
+  font-size: xxx-large;
+  color: #FBC02d;
+}
+
+/** end service section **/
