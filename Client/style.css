@@ -245,8 +245,6 @@ body {
       Start Styling
   -------------------------------------------------*/
   .mt20{margin-top:20px;}
-  .site-wrapper {
-    border-top: 4px solid #ff0037; }
   
   .page-close {
     font-size: 30px;
@@ -265,9 +263,24 @@ body {
       position: relative;
       z-index: 0;
       font-weight: 900;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     }
+     .techzone{
+       font-family:Caveat;
+       color: rgb(68, 47, 255);
+       
+
+     }
     .page-title p {
-      font-size: 16px; }
+      font-size: 22px;
+      margin-left: -8vw;
+       font-family:Dancing script;
+
+     }
+     .page-title p span{
+       margin-left: 18vw;
+     }
     .page-title .title-bg {
       color: rgba(30, 37, 48, 0.07);
       font-size: 158px;
@@ -375,7 +388,8 @@ body {
           height: 5px; }
       .hexagon-item:hover .hex-item div::before,
       .hexagon-item:hover .hex-item div::after {
-        background-color: #ff0037; }
+        background-color:greenyellow;
+       }
       .hexagon-item:hover .hex-content svg {
         -webkit-transform: scale(0.97);
         -moz-transform: scale(0.97);
@@ -479,7 +493,9 @@ body {
       display: block;
       font-size: 36px;
       line-height: 30px;
-      margin-bottom: 11px; }
+      margin-bottom: 11px;
+      /* text-shadow:0 1px 5px rgb(36, 252, 8);  */
+     }
     .hex-content .title {
       display: block;
       font-family: "Open Sans", sans-serif;
