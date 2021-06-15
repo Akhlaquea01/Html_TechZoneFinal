@@ -12,10 +12,7 @@ export class LoginRegisterComponent implements OnInit {
   }
   status: boolean = true;
   clickEvent(){
-      console.log(this.status);
       this.status = !this.status;
-      console.log(this.status);
-
   }
 
 }

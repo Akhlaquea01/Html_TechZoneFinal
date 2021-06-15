@@ -1,5 +1,5 @@
 
-body {
+/* body {
   font-family: "Libre Baskerville", serif;
   font-weight: 400;
   font-size: 16px;
@@ -10,7 +10,7 @@ body {
 ::-webkit-scrollbar {
     width: 10px;
     background-color: #F5F5F5;
-}
+} */
 
 ::-webkit-scrollbar-thumb {
     background-color: #f90a23;
@@ -18,7 +18,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
     background-color: #F5F5F5;
 }
 
@@ -32,9 +32,9 @@ body {
 }
 a {
   color: inherit;
-  -webkit-transition: all 0.3s ease 0s;
+  /* -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s; */
   transition: all 0.3s ease 0s; }
   a:hover, a:focus {
     color: #ababab;
