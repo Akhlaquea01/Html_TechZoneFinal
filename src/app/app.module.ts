@@ -12,6 +12,7 @@ import { FeedbackComponent } from './main-page/feedback/feedback.component';
 import { FooterComponent } from './main-page/footer/footer.component';
 import { LoginRegisterComponent } from './login-register/login-register.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ReviewComponent } from './main-page/review/review.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     FeedbackComponent,
     FooterComponent,
     LoginRegisterComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    ReviewComponent
   ],
   imports: [
     BrowserModule,
