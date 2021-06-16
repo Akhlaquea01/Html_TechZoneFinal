@@ -13,6 +13,7 @@ import { FooterComponent } from './main-page/footer/footer.component';
 import { LoginRegisterComponent } from './login-register/login-register.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ReviewComponent } from './main-page/review/review.component';
+import { AvailableBrandsComponent } from './main-page/categories/available-brands/available-brands.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ReviewComponent } from './main-page/review/review.component';
     FooterComponent,
     LoginRegisterComponent,
     PageNotFoundComponent,
-    ReviewComponent
+    ReviewComponent,
+    AvailableBrandsComponent
   ],
   imports: [
     BrowserModule,
