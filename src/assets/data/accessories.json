@@ -1,0 +1,27 @@
+[
+  {
+    "brandName": "Samsung",
+    "logo": "assets/img/samsung_logo.png"
+  },
+  {
+    "brandName": "Oppo",
+    "logo": "assets/img/oppo_logo.png"
+  },
+  {
+    "brandName": "Oneplus",
+    "logo": "assets/img/oneplus_logo.png"
+  },
+  {
+    "brandName": "Nokia",
+    "logo": "assets/img/nokia_logo.png"
+  },
+  {
+    "brandName": "Realme",
+    "logo": "assets/img/realme_logo.png"
+  },
+  {
+    "brandName": "Vivo",
+    "logo": "assets/img/vivo_logo.png"
+  }
+
+]

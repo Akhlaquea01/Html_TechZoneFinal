@@ -14,6 +14,11 @@ import { LoginRegisterComponent } from './login-register/login-register.componen
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ReviewComponent } from './main-page/review/review.component';
 import { AvailableBrandsComponent } from './main-page/categories/available-brands/available-brands.component';
+import { SpinnerComponent } from './spinner/spinner.component';
+import { TvComponent } from './main-page/categories/tv/tv.component';
+import { AccessoriesComponent } from './main-page/categories/accessories/accessories.component';
+import { SamsungMobileComponent } from './main-page/categories/available-brands/samsung-mobile/samsung-mobile.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -28,11 +33,16 @@ import { AvailableBrandsComponent } from './main-page/categories/available-brand
     LoginRegisterComponent,
     PageNotFoundComponent,
     ReviewComponent,
-    AvailableBrandsComponent
+    AvailableBrandsComponent,
+    SpinnerComponent,
+    TvComponent,
+    AccessoriesComponent,
+    SamsungMobileComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

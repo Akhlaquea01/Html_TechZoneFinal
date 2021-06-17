@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FeedbackService } from 'src/app/feedback.service';
+import { IReviews } from './reviews';
 
 @Component({
   selector: 'app-review',
@@ -6,10 +8,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./review.component.css']
 })
 export class ReviewComponent implements OnInit {
+  Reviewers: IReviews[] = [];
 
-  constructor() { }
+  constructor(public _feedbackServices:FeedbackService) { }
 
   ngOnInit(): void {
+    this._feedbackServices.getFeedback().subscribe(data => this.Reviewers = data)
   }
 
 }

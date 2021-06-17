@@ -1,18 +1,18 @@
 <app-side-bar></app-side-bar>
 
-<h2>Avalable Brands</h2>
+<h2>Avalable Mobile Brands</h2>
 
 <div class="brands">
   <div class="container">
-    <div class="card">
+    <div class="card" *ngFor="let brand of mobileBrands">
       <div class="box">
         <div class="content">
-        <img src="assets/img/samsung_logo.png" alt="" srcset="" class="samsung_logo">
+        <img src="{{brand.logo}}" alt="" srcset="" class="{{brand.brandName}}">
         </div>
       </div>
     </div>
 
-    <div class="card">
+    <!-- <div class="card">
       <div class="box">
         <div class="content">
         <img src="assets/img/oppo_logo.png" alt="" srcset=""class="oppo_logo">
@@ -52,6 +52,6 @@
 
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </div>

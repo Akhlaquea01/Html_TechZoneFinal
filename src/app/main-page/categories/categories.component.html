@@ -10,28 +10,14 @@
           </div>
       </div>
       <div class="row">
-          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-            <a routerLink="/brands">
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12" *ngFor='let product of productCategories'>
+            <a routerLink="{{product.link}}">
               <div class="service-box">
-                  <i class="fas fa-mobile-alt"></i>
-                  <button>Mobile Phone</button>
-                  <p>Exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea </p>
+                  <i class="{{product.icon}}"></i>
+                  <button>{{product.brandName}}</button>
+                  <p>{{product.details}} </p>
               </div>
             </a>
-          </div>
-          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-              <div class="service-box">
-                <i class="fas fa-tv"></i>
-                  <button>Smart Telivision</button>
-                  <p>Exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea </p>
-              </div>
-          </div>
-          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-              <div class="service-box">
-                <i class="fas fa-headphones-alt"></i>
-                  <button>Accessories</button>
-                  <p>Exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea </p>
-              </div>
           </div>
       </div>
   </div>
