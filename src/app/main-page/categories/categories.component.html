@@ -1,25 +1,28 @@
  <!-- service -->
- <div class="service">
-  <div class="container">
-      <div class="row">
-          <div class="col-md-8 offset-md-2">
-              <div class="title">
-                  <h2>Different <strong class="black">Category</strong></h2>
-                  <span>Easy and effective way to get your device repair</span>
-              </div>
-          </div>
-      </div>
-      <div class="row">
-          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12" *ngFor='let product of productCategories'>
-            <a routerLink="{{product.link}}">
-              <div class="service-box">
-                  <i class="{{product.icon}}"></i>
-                  <button>{{product.brandName}}</button>
-                  <p>{{product.details}} </p>
-              </div>
-            </a>
-          </div>
-      </div>
+ <app-spinner *ngIf="loader"></app-spinner>
+ <section *ngIf="!loader">
+  <div class="service">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="title">
+                    <h2>Different <strong class="black">Category</strong></h2>
+                    <span>Easy and effective way to get your device repair</span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12" *ngFor='let product of productCategories'>
+              <a routerLink="{{product.link}}">
+                <div class="service-box">
+                    <i class="{{product.icon}}"></i>
+                    <button>{{product.brandName}}</button>
+                    <p>{{product.details}} </p>
+                </div>
+              </a>
+            </div>
+        </div>
+    </div>
   </div>
-</div>
+ </section>
 <!-- end service -->

@@ -10,10 +10,10 @@
 }
 
 .spinner {
-  background: #080808;
+  /* background: #08080810; */
   display: flex;
   font: 1em/1.5 sans-serif;
-  height: 100vh;
+  height: 300px;
 }
 
 .pl {

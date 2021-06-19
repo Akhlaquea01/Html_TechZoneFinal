@@ -19,6 +19,7 @@ import { TvComponent } from './main-page/categories/tv/tv.component';
 import { AccessoriesComponent } from './main-page/categories/accessories/accessories.component';
 import { SamsungMobileComponent } from './main-page/categories/available-brands/samsung-mobile/samsung-mobile.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ProductGalleryComponent } from './main-page/categories/product-gallery/product-gallery.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { HttpClientModule } from '@angular/common/http';
     SpinnerComponent,
     TvComponent,
     AccessoriesComponent,
-    SamsungMobileComponent
+    SamsungMobileComponent,
+    ProductGalleryComponent
   ],
   imports: [
     BrowserModule,

@@ -8,11 +8,14 @@ import { ICategories } from './cateogries';
   styleUrls: ['./categories.component.css']
 })
 export class CategoriesComponent implements OnInit {
+  loader=true
  productCategories:ICategories[]=[];
   constructor(public _cateogriesService:CategoryService) { }
 
   ngOnInit(): void {
-    this._cateogriesService.getCateogries().subscribe(data => this.productCategories = data)
+    this._cateogriesService.getCateogries().subscribe(data =>{
+      this.loader=false
+      this.productCategories = data})
   }
 
 }

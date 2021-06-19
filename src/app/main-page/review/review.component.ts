@@ -8,12 +8,16 @@ import { IReviews } from './reviews';
   styleUrls: ['./review.component.css']
 })
 export class ReviewComponent implements OnInit {
+  loader=true;
   Reviewers: IReviews[] = [];
 
   constructor(public _feedbackServices:FeedbackService) { }
 
   ngOnInit(): void {
-    this._feedbackServices.getFeedback().subscribe(data => this.Reviewers = data)
+    this._feedbackServices.getFeedback().subscribe(data =>{
+      this.loader=false
+
+      this.Reviewers = data})
   }
 
 }

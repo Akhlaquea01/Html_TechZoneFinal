@@ -1,4 +1,5 @@
-<section>
+<app-spinner *ngIf="loader"></app-spinner>
+<section *ngIf="!loader">
   <input type="radio" name="position" />
   <input type="radio" name="position" />
   <input type="radio" name="position" checked/>
