@@ -20,6 +20,7 @@ import { AccessoriesComponent } from './main-page/categories/accessories/accesso
 import { SamsungMobileComponent } from './main-page/categories/available-brands/samsung-mobile/samsung-mobile.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ProductGalleryComponent } from './main-page/categories/product-gallery/product-gallery.component';
+import { SideBarV2Component } from './main-page/side-bar-v2/side-bar-v2.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { ProductGalleryComponent } from './main-page/categories/product-gallery/
     TvComponent,
     AccessoriesComponent,
     SamsungMobileComponent,
-    ProductGalleryComponent
+    ProductGalleryComponent,
+    SideBarV2Component
   ],
   imports: [
     BrowserModule,
