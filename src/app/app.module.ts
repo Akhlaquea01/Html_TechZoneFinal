@@ -17,7 +17,6 @@ import { AvailableBrandsComponent } from './main-page/categories/available-brand
 import { SpinnerComponent } from './spinner/spinner.component';
 import { TvComponent } from './main-page/categories/tv/tv.component';
 import { AccessoriesComponent } from './main-page/categories/accessories/accessories.component';
-import { SamsungMobileComponent } from './main-page/categories/available-brands/samsung-mobile/samsung-mobile.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ProductGalleryComponent } from './main-page/categories/product-gallery/product-gallery.component';
 import { SideBarV2Component } from './main-page/side-bar-v2/side-bar-v2.component';
@@ -39,7 +38,6 @@ import { SideBarV2Component } from './main-page/side-bar-v2/side-bar-v2.componen
     SpinnerComponent,
     TvComponent,
     AccessoriesComponent,
-    SamsungMobileComponent,
     ProductGalleryComponent,
     SideBarV2Component
   ],

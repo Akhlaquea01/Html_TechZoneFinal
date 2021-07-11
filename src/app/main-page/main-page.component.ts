@@ -7,6 +7,7 @@ import { Component, OnInit, AfterViewInit } from '@angular/core';
 })
 export class MainPageComponent implements OnInit , AfterViewInit {
   isLoading: boolean;
+  home:boolean=true;
   constructor() {
     this.isLoading = true;
   }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-side-bar-v2',
@@ -6,8 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./side-bar-v2.component.css']
 })
 export class SideBarV2Component implements OnInit {
-
+  @Input()
+  home!: boolean;
   constructor() { }
+
   btn = document.querySelector("#btn");
   sidebar = document.querySelector(".sidebar");
   searchBtn = document.querySelector(".bx-search");
