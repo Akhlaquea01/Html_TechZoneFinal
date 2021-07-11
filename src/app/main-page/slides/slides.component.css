@@ -6,9 +6,9 @@
 body{
 font-family: poppins;
 }
-.carousel{
+/* .carousel{
 margin-left: 3.8%;
-}
+} */
 .carousel-inner .item{
 height: 100vh;
 }

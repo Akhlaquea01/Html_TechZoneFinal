@@ -6,7 +6,7 @@ body {
 
 
 .footer {
-  height: 40vh;
+  height: auto;
   width: 100%;
 
 }
@@ -50,7 +50,7 @@ footer .form-control {
 }
 span{
   position: relative;
-  bottom: -10px;
+  /* bottom: -10px; */
   margin-left: 25%;
 }
 
