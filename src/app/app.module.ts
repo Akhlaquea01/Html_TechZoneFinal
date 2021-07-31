@@ -20,6 +20,7 @@ import { AccessoriesComponent } from './main-page/categories/accessories/accesso
 import { HttpClientModule } from '@angular/common/http';
 import { ProductGalleryComponent } from './main-page/categories/product-gallery/product-gallery.component';
 import { SideBarV2Component } from './main-page/side-bar-v2/side-bar-v2.component';
+import { SingleBrandComponent } from './main-page/categories/available-brands/single-brand/single-brand.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { SideBarV2Component } from './main-page/side-bar-v2/side-bar-v2.componen
     TvComponent,
     AccessoriesComponent,
     ProductGalleryComponent,
-    SideBarV2Component
+    SideBarV2Component,
+    SingleBrandComponent
   ],
   imports: [
     BrowserModule,

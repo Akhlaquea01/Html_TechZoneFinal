@@ -4,12 +4,20 @@
 
 <div class="brands">
   <div class="container">
-    <div class="card" *ngFor="let brand of mobileBrands">
+    <app-single-brand
+    *ngFor="let brand of mobileBrands; let i=index"
+    [siBrand]="brand"
+    [index]="i"
+    (click)="onClick(i)"
+    >
+
+    </app-single-brand>
+    <!-- <div class="card" *ngFor="let brand of mobileBrands; let i=index">
       <div class="box">
-        <div class="content">
+        <div class="content">{{i}}
         <img src="{{brand.logo}}" alt="" srcset="" class="{{brand.brandName}}" routerLink="/gallery">
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </div>

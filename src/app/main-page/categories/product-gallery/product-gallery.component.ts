@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Params, Router } from '@angular/router';
+import { AccessoriesComponent } from '../accessories/accessories.component';
 
 @Component({
   selector: 'app-product-gallery',
@@ -6,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./product-gallery.component.css']
 })
 export class ProductGalleryComponent implements OnInit {
+  id:number | undefined
 addidas:any[]=[]
 tiger:any[]=[]
-  constructor() { 
+  constructor(private route:ActivatedRoute, private router:Router) {
     this.addidas=[
       {
         "heading":"I-5923 RUNNER PRIDE",
@@ -76,6 +79,10 @@ tiger:any[]=[]
   }
 
   ngOnInit(): void {
+    this.route.params.subscribe(
+      (params:Params)=>{
+      this.id=+params["id"]
+    })
   }
 
 }

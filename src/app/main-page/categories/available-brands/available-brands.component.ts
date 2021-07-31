@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { MobileService } from 'src/app/mobile.service';
 import { IMobiles } from './mobileBrands';
 
@@ -10,9 +11,12 @@ import { IMobiles } from './mobileBrands';
 export class AvailableBrandsComponent implements OnInit {
   mobileBrands: IMobiles[] =[]
 
-  constructor(public _mobileServices:MobileService) { }
+  constructor(public _mobileServices:MobileService, private _router:Router) { }
 
   ngOnInit(): void {
     this._mobileServices.getMobiles().subscribe(data => this.mobileBrands = data)
+  }
+  onClick(i:number){
+    this._router.navigate(["/gallery"])
   }
 }

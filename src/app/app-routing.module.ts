@@ -4,6 +4,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { LoginRegisterComponent } from './login-register/login-register.component';
 import { AccessoriesComponent } from './main-page/categories/accessories/accessories.component';
 import { AvailableBrandsComponent } from './main-page/categories/available-brands/available-brands.component';
+import { SingleBrandComponent } from './main-page/categories/available-brands/single-brand/single-brand.component';
 import { ProductGalleryComponent } from './main-page/categories/product-gallery/product-gallery.component';
 import { TvComponent } from './main-page/categories/tv/tv.component';
 import { FooterComponent } from './main-page/footer/footer.component';
@@ -19,10 +20,14 @@ const routes: Routes = [
   { path: "feedback", component: MainPageComponent },
   { path: "about", component: MainPageComponent },
   { path: "services", component: MainPageComponent },
-  { path: "mobiles", component:AvailableBrandsComponent },
+  { path: "mobiles", component:AvailableBrandsComponent,
+  children:[
+    {path:":id", component:ProductGalleryComponent}
+  ]
+},
   { path: "tv", component:TvComponent },
   { path: "accessories", component:AccessoriesComponent },
-  { path: "gallery", component:ProductGalleryComponent },
+  // { path: "gallery", component:ProductGalleryComponent },
   { path: "**", component: PageNotFoundComponent }
 ];
 
