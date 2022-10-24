@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { ITv } from './main-page/categories/tv/tv';
+import { ITv } from '../main-page/categories/tv/tv';
 
 @Injectable({
   providedIn: 'root'

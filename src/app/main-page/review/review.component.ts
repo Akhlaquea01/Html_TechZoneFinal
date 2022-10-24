@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FeedbackService } from 'src/app/feedback.service';
+import { FeedbackService } from 'src/app/services/feedback.service';
 import { IReviews } from './reviews';
 
 @Component({

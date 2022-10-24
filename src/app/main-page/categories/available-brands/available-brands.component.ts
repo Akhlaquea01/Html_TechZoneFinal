@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { MobileService } from 'src/app/mobile.service';
+import { MobileService } from 'src/app/services/mobile.service';
 import { IMobiles } from './mobileBrands';
 
 @Component({

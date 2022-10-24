@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { TvService } from 'src/app/tv.service';
+import { TvService } from 'src/app/services/tv.service';
 import { ITv } from './tv';
 
 @Component({
