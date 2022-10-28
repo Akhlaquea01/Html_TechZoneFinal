@@ -20,26 +20,9 @@
             </div>
 
             <div class="hexagon-menu clear">
-              <ng-container
-                *ngTemplateOutlet="hexagonItem; context:{$implicit:{route:'/main',icon:'fa fa-universal-access',name:'Welcome'}}">
-              </ng-container>
-              <ng-container
-                *ngTemplateOutlet="hexagonItem; context:{$implicit:{route:'/about',icon:'fa-bullseye',name:'About'}}">
-              </ng-container>
-              <ng-container
-                *ngTemplateOutlet="hexagonItem; context:{$implicit:{route:'/services',icon:'fa fa-cogs',name:'Admin'}}">
-              </ng-container>
-              <ng-container
-                *ngTemplateOutlet="hexagonItem; context:{$implicit:{route:'/user',icon:'fa fa-user',name:'Login'}}">
-              </ng-container>
-              <ng-container
-                *ngTemplateOutlet="hexagonItem; context:{$implicit:{route:'/products',icon:'fa fa-braille',name:'Products'}}">
-              </ng-container>
-              <ng-container
-                *ngTemplateOutlet="hexagonItem; context:{$implicit:{route:'/feedback',icon:'fa fa-clipboard',name:'Feedback'}}">
-              </ng-container>
-              <ng-container
-                *ngTemplateOutlet="hexagonItem; context:{$implicit:{route:'/contact',icon:'fa fa-map-signs',name:'Contacts'}}">
+              <ng-container *ngFor="let option of homePageOptions">
+                <ng-container *ngTemplateOutlet="hexagonItem; context:{$implicit:option}">
+                </ng-container>
               </ng-container>
             </div>
           </div>
