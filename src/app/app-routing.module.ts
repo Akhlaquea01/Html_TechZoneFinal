@@ -14,12 +14,12 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 const routes: Routes = [
   { path: "", component: HomePageComponent },
   { path: "main", component: MainPageComponent },
-  { path: "user", component: LoginRegisterComponent },
-  { path: "contact", component: MainPageComponent },
-  { path: "products", component: MainPageComponent },
-  { path: "feedback", component: MainPageComponent },
   { path: "about", component: MainPageComponent },
   { path: "services", component: MainPageComponent },
+  { path: "user", component: LoginRegisterComponent },
+  { path: "products", component: MainPageComponent },
+  { path: "feedback", component: MainPageComponent },
+  { path: "contact", component: MainPageComponent },
   { path: "mobiles", component:AvailableBrandsComponent,
   children:[
     {path:":id", component:ProductGalleryComponent}
