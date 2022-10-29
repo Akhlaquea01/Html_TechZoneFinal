@@ -21,6 +21,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ProductGalleryComponent } from './main-page/categories/product-gallery/product-gallery.component';
 import { SideBarV2Component } from './main-page/side-bar-v2/side-bar-v2.component';
 import { SingleBrandComponent } from './main-page/categories/available-brands/single-brand/single-brand.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,7 @@ import { SingleBrandComponent } from './main-page/categories/available-brands/si
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule, ReactiveFormsModule, FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
